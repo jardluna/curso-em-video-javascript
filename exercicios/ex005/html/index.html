@@ -7,9 +7,74 @@
     <title>Exercício 5</title>
 </head>
 <body>
-    
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div class="msg">
+        <p><strong>Clique em aqui</strong></p>
+        <p>Teste de clique</p>
+    </div>
+    <div>
+        <p>teste 1</p>
+        <p>teste 2</p>
+    </div>
     <script>
-        
+        var d = window.document.querySelector('div.msg')
+        window.document.write(d.innerHTML)
+        d.style.background = 'white'
+        //Usando DOM por Seletor
+        //CUIDADO: Navegadores desatualizados, que usam versões mais antigas do ECMAScript, não suportam o querySelector
+
+/*---------------------------------------------------------*/
+
+        /*var d = window.document.getElementsByClassName('msg')[0]
+        window.document.write(d.innerHTML)
+        d.style.background = 'white'
+        //d.innerText = 'Estou aguardando...'*/
+        //Usando DOM por Classe
+
+/*---------------------------------------------------------*/
+
+        /*var d = window.document.getElementsByTagName('div')[0]
+        window.document.write(d.innerHTML)
+        d.style.background = 'white'
+        //d.innerText = 'Estou aguardando...'*/
+        //Usando DOM por Marca
+
+/*---------------------------------------------------------*/
+
+        /*var d = window.document.getElementsByName('msg')[0]
+        window.document.write(d.innerHTML)
+        d.style.background = 'white'
+        //d.innerText = 'Estou aguardando...'*/
+        //Usando DOM por Nome
+
+/*---------------------------------------------------------*/
+
+        /*var d = window.document.getElementById('msg')
+        window.document.write(d.innerText)
+        d.style.background = 'white'
+        //d.innerText = 'Estou aguardando...'*/
+        //Usando DOM por ID
+
+/*---------------------------------------------------------*/
+
+        //Os parágrafos são contados na ordem de cima para baixo, e sempre começando pelo [0]
+        /*var p = window.document.getElementsByTagName('p')[0]
+        p.style.color = 'blue'
+
+        var p = window.document.getElementsByTagName('p')[2]
+        window.document.write(p.innerText + ' Olá, Mundo!<br>')
+
+        var p = window.document.getElementsByTagName('p')[1]
+        window.document.write(p.innerHTML)*/
+
+/*---------------------------------------------------------*/
+
+        /*window.document.writeln('Olá, Mundo!')
+        window.document.writeln(window.document.charset)
+        window.document.writeln(window.navigator.appName)
+        window.document.writeln(window.document.URL)*/
     </script>
 </body>
 </html>
