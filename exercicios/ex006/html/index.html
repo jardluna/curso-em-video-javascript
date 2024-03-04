@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Exercício 6</title>
+</head>
+<body>
+    <div id="area" onmouseenter="entrar()" onclick="clicar()" onmouseout="sair()">
+        Interaja
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseout', sair)
+
+        function entrar() {
+            a.innerText = 'Entrou'
+            a.style.background = 'blue'
+            a.style.color = 'white'
+        }
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'green'
+            a.style.color = 'white'
+        }
+        function sair() {
+            a.innerText = 'Saiu...'
+            a.style.background = 'red'
+            a.style.color = 'white'
+        }
+    </script>
+</body>
+</html>
