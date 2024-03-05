@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style002.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Qual o seu pais?</h1>
+    <p>Digite aqui: <input type="text" name="pais" id="pais"></p>
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resp">
+
+    </div>
+
+    <script>
+        function verificar() {
+            var pais = window.document.getElementById('pais')
+            var paisResp = String(pais.value)
+            var divResp = window.document.getElementById('resp')
+            resp.innerHTML = `<p>O seu país de origem é o(a) ${paisResp}.</p>`
+
+            if (paisResp == 'BRASIL' || paisResp == 'Brasil' || paisResp == 'brasil' || paisResp == 'BR' || paisResp == 'br') {
+                divResp.innerHTML += '<p>Você é brasileiro... Vem aqui me dar um abraço!</p>'
+                divResp.style.color = 'green'
+                divResp.style.fontWeight = 'bold'
+            } else {
+                divResp.innerHTML += '<p>Você é estrangeiro... I do not speak ingles?</p>'
+                divResp.style.color = 'red'
+                divResp.style.fontWeight = 'bold'
+            }
+        }
+    </script>
+</body>
+</html>
