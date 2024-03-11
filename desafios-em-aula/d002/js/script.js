@@ -14,8 +14,9 @@ function verificar() {
         img.setAttribute('id', 'foto')
         if (fSex[0].checked) {
             genero = 'homem'
-            res.style.color = 'blue'
+            res.style.color = 'dodgerblue'
             res.style.fontWeight = 'bold'
+            document.body.style.backgroundColor = 'dodgerblue'
             if (idade >= 0 && idade < 5) {
                 //BEBE
                 res.innerHTML = `Detectamos um bebê com ${idade} anos`
@@ -32,15 +33,22 @@ function verificar() {
                 //ADULTO
                 res.innerHTML = `Detectamos um adulto com ${idade} anos`
                 img.setAttribute('src', '../images/adultoH.png')
-            } else {
+            } else if (idade < 120) {
                 //IDOSO
                 res.innerHTML = `Detectamos um idoso com ${idade} anos`
                 img.setAttribute('src', '../images/idosoH.png')
+            } else {
+                //INTERROGAÇÃO
+                res.innerHTML = `Você tem ${idade} anos, e ainda está vivo?`
+                res.style.color = 'black'
+                document.body.style.backgroundColor = 'wheat'
+                img.setAttribute('src', '../images/interrogacao.png')
             }
         } else if (fSex[1].checked) {
             genero = 'mulher'
             res.style.color = 'palevioletred'
             res.style.fontWeight = 'bold'
+            document.body.style.backgroundColor = 'palevioletred'
             if (idade >= 0 && idade < 5) {
                 //BEBE
                 res.innerHTML = `Detectamos um bebê com ${idade} anos`
@@ -57,10 +65,16 @@ function verificar() {
                 //ADULTO
                 res.innerHTML = `Detectamos um adulto com ${idade} anos`
                 img.setAttribute('src', '../images/adultoM.png')
-            } else {
+            } else if (idade < 120) {
                 //IDOSO
                 res.innerHTML = `Detectamos uma idosa com ${idade} anos`
                 img.setAttribute('src', '../images/idosoM.png')
+            } else {
+                //INTERROGAÇÃO
+                res.innerHTML = `Você tem ${idade} anos, e ainda está vivo?`
+                res.style.color = 'black'
+                document.body.style.backgroundColor = 'wheat'
+                img.setAttribute('src', '../images/interrogacao.png')
             }
         }
         res.appendChild(img)
