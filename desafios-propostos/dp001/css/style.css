@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 5px 0px;
+    background-color: white;
+    text-align: center;
+    font-size: .8em;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
+
+.material-icons {
+    vertical-align: middle;
+    padding-bottom: 2px;
+}
