@@ -10,6 +10,47 @@ body {
     background-color: dodgerblue;
 }
 
+header h1 {
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+    padding: 10px;
+}
+
+section {
+    background-color: white;
+    width: 450px;
+    margin: 0px auto 100px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+section div p {
+    width: 200px;
+    padding: 5px;
+}
+
+section input[type=number] {
+    padding: 0px 3px;
+}
+
+section input[type=button] {
+    width: 120px;
+    height: 30px;
+    font-weight: bold;
+    margin: 5px 0px 5px 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+section input[type=button]:hover {
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid black;
+    border-radius: 100px;
+}
+
 footer {
     position: fixed;
     bottom: 0;
