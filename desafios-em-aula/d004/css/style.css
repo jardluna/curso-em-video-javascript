@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dodgerblue;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+    padding: 10px;
+}
+
+section {
+    background-color: white;
+    width: 300px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+section div #form {
+    text-align: center;
+}
+
+section div label {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+section div input[type=number] {
+    width: 107px;
+    padding: 2px;
+    margin: 2px 0px 15px 0px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+section div input[type=button] {
+    width: 113px;
+    padding: 5px;
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+section div input[type=button]:hover {
+    background-color: darkgray;
+    color: white;
+    font-weight: bold;
+}
+
+section div select {
+    text-align: left;
+    padding: 5px;
+    display: block;
+    margin: 15px auto;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 5px 0px;
+    background-color: white;
+    text-align: center;
+    font-size: .8em;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
+
+.material-icons {
+    vertical-align: middle;
+    padding: 1.8px;
+    font-size: 1.7em;
+}
