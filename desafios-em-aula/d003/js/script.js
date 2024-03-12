@@ -10,6 +10,8 @@ function contar() {
     } else {
         res.innerHTML = `Contagem: <br>`
         res.style.padding = `5px`
+        res.style.fontSize = '1.2em'
+        res.style.textAlign = 'center'
         let i = Number(ini.value)
         let f = Number(fim.value)
         let p = Number(pas.value)

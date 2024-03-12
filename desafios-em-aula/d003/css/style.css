@@ -19,29 +19,36 @@ header h1 {
 
 section {
     background-color: white;
-    width: 450px;
+    width: 400px;
     margin: 0px auto 100px;
     padding: 10px;
     border-radius: 15px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-section div p {
-    width: 200px;
-    padding: 5px;
+section div label {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 section input[type=number] {
-    padding: 0px 3px;
+    display: block;
+    margin: 0px auto 5px;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 3px;
 }
 
 section input[type=button] {
     width: 120px;
     height: 30px;
     font-weight: bold;
-    margin: 5px 0px 5px 0px;
+    display: block;
+    margin: 25px auto;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 30px;
 }
 
 section input[type=button]:hover {
@@ -49,6 +56,12 @@ section input[type=button]:hover {
     color: white;
     border: 1px solid black;
     border-radius: 100px;
+}
+
+section #resP{
+    text-align: center;
+    font-size: 1.2em;
+    
 }
 
 footer {
