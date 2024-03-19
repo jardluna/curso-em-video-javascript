@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body h1 {
+    font-variant: small-caps;
+    text-align: center;
+    margin: 10px;
+}
+
+input[type=button] {
+    display: block;
+    background-color: gray;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+input[type=button]:hover {
+    transition: .3s;
+    width: 95vw;
+    cursor: pointer;
+}
+
+div#res {
+    margin: 10px;
+}
